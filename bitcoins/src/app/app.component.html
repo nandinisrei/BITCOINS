@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header center">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="../../assets/bitcoin-logo.png" width="50" height="50">
+      </a> <span class="navbar-brand " style="margin-bottom: 30px;"><h1>{{title}}</h1></span>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="container">
+  <div class="center" >
+  <h5><p>{{disclimer}}</p></h5>  
+   
+  </div>
+</div>
+<div class="container">
+  <div class="center" >
+    <label>Last Update : {{CurrencyUpdatedate }} </label>
+  
+   
+  </div>
+</div>
+<div class="container ">
+<table class="table table-bordered table-darky">
+  <thead class="thead-light table-striped">
+    <tr class="table-dark">
+      <th scope="col">#</th>
+      <th scope="col">Country</th>
+      <th scope="col">Rate</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-dark-row" *ngFor="let item of stringObject; let i = index" style="background: antiquewhite; ">
+      <th scope="row">{{i+1}}</th>
+      <td>{{item.code }}</td>
+      <td>{{item.rate_float | currency }}</td>
+      <td>{{item.description }}</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>

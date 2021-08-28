@@ -1,0 +1,23 @@
+.navbar-default {
+    background-color: #001F79 !important;
+    border-color: #001F79 !important;
+    
+}
+.navbar {
+    border-radius: 0px !important;
+    min-height: 70px !important;
+}
+.navbar-default .navbar-brand {
+    color: #ffff;
+}
+html body {
+    
+    color: #ffff !important;
+    background-color: #42546a !important;
+}
+.table-dark {
+
+    background: darkred;
+    color: #ffffff;
+
+}
